@@ -1,5 +1,8 @@
 # Angularコンポーネントの遅延ロード実験
+UIライブラリとしてAngular Materialの代わりに普段使い慣れているPrimeNGを使っているが基本的には同じ。<br>
+PrimeNGの`Dialog`と`Table`を依存関係に持ったコンポーネント`app-table-dialog`を、ダイアログを表示するボタンを初めて押したときに遅延ロードするサンプル。
 
+## バンドルサイズと依存関係を確認する
 ```sh
 # stats-json付きでビルドする
 $ npm run build:stats
