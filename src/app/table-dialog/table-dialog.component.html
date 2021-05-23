@@ -1,0 +1,19 @@
+<p>table-dialog works! {{ visible }}</p>
+<p-dialog [(visible)]="visible" [header]="'Title'" (onHide)="onHide()">
+  <p-table [value]="data">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>foo</th>
+        <th>bar</th>
+        <th>baz</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-row>
+      <tr>
+        <td>{{ row.foo }}</td>
+        <td>{{ row.bar }}</td>
+        <td>{{ row.baz }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</p-dialog>
