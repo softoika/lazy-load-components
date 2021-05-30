@@ -12,7 +12,6 @@ import { TableDialogComponent } from './table-dialog/table-dialog.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'lazy-load-components';
   visible = false;
 
   @ViewChild('dialogContainer', { read: ViewContainerRef })

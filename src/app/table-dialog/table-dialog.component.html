@@ -1,6 +1,5 @@
-<p>table-dialog works! {{ visible }}</p>
 <p-dialog [(visible)]="visible" [header]="'Title'" (onHide)="onHide()">
-  <p-table [value]="data">
+  <p-table *ngIf="data$ | async as data" [value]="data">
     <ng-template pTemplate="header">
       <tr>
         <th>foo</th>
